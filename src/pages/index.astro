@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro"
 import Header from "../components/Header/Header.astro"
 import Hero from "../components/Hero.astro"
 import About from "../components/About.astro"
-import HowItWorks from "../components/HowItWorks.astro";
-import Applications from "../components/Applications.astro";
+import HowItWorks from "../components/HowItWorks.astro"
+import Applications from "../components/Applications.astro"
+import Questions from "../components/Questions.jsx"
 ---
 
 <Layout title="EMIT">
@@ -13,4 +14,5 @@ import Applications from "../components/Applications.astro";
   <About />
   <HowItWorks />
   <Applications />
+  <Questions client:load />
 </Layout>
