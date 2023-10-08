@@ -1,14 +1,19 @@
-<section class="bg-rose-500 text-white">
-  <div class="max-w-screen-xl mx-auto grid md:grid-cols-1 gap-8 lg:gap-16 px-4 py-16">
+<section class="bg-rose-600 text-white">
+  <div class="max-w-screen-xl mx-auto gap-8 lg:gap-16 px-4 py-16">
+    <h1 class="text-4xl text-center font-bold tracking-tight mb-8">
+      ¿Qué se puede hacer con EMIT?
+    </h1>
     <div class="mx-auto">
       <div class="swiper">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev outline-white"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="rounded-xl" src="slider/1.png" width="600px" />
-            <h2 class="text-3xl font-bold tracking-tight mb-4 place-self-center">
+          <div class="swiper-slide place-items-center">
+            <img class="rounded-xl w-64 m-auto" src="applications/1.png" width="600px" />
+            <h2 class="text-3xl text-center font-bold tracking-tight mb-4 place-self-center">
               Mapeo de Gases de Efecto Invernadero
             </h2>
-            <p class="font-light">
+            <p class="font-light text-center">
               El dióxido de carbono y el metano son los dos gases dominantes que contribuyen
                al cambio climático. El metano atrapa más calor en la atmósfera por molécula 
                que el dióxido de carbono, por lo que apuntar a la reducción de las emisiones 
@@ -25,11 +30,11 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <img class="rounded-xl" src="slider/2.png" width="600px" />
-            <h2 class="text-3xl font-bold tracking-tight mb-4 text-ellipsis">
+            <img class="rounded-xl w-64 m-auto" src="applications/2.png" width="600px" />
+            <h2 class="text-3xl text-center font-bold tracking-tight mb-4 place-self-center">
               Propiedades de la Nieve y Recursos Hídricos
             </h2>
-            <p class="font-light">
+            <p class="font-light text-center">
               El aumento del derretimiento de la nieve y el hielo hace que la Tierra absorba más la luz solar y desplaza 
               enormes volúmenes de agua almacenada desde la superficie terrestre, elevando el nivel del mar y cambiando 
               la disponibilidad de agua para grandes poblaciones. Con una mayor absorción solar, en parte debido a la 
@@ -44,30 +49,24 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <img class="rounded-xl" src="slider/3.png" width="600px" />
-            <h2 class="text-3xl font-bold tracking-tight mb-4 place-self-center">
-              Mapeo de Gases de Efecto Invernadero
+            <img class="rounded-xl w-64 m-auto" src="applications/3.png" width="600px" />
+            <h2 class="text-3xl text-center font-bold tracking-tight mb-4 place-self-center">
+              Desastres Naturales
             </h2>
-            <p class="font-light">
-              El dióxido de carbono y el metano son los dos gases dominantes que contribuyen
-               al cambio climático. El metano atrapa más calor en la atmósfera por molécula 
-               que el dióxido de carbono, por lo que apuntar a la reducción de las emisiones 
-               antropogénicas de metano ofrece un enfoque eficaz para disminuir el calentamiento 
-               atmosférico general. El metano y el dióxido de carbono tienen características de 
-               absorción distintas en el infrarrojo de onda corta (1800-2500 nm) que permiten la 
-               detección y el mapeo de emisiones puntuales de gases de efecto invernadero con 
-               datos EMIT. La identificación de fuertes fuentes de emisiones ofrece el potencial 
-               de mejorar nuestra comprensión de las emisiones antropogénicas y mitigarlas. 
-               Por ejemplo, los operadores de petróleo y gas pueden localizar y reparar fugas 
-               que son costosas y dañinas para el medio ambiente, lo que brinda una oportunidad 
-               beneficiosa para todos. Otros sectores podrían utilizar esta información para 
-               identificar oportunidades de captura de metano para quemarlo o convertirlo en recursos combustibles.
+            <p class="font-light text-center">
+              Evaluar el riesgo de las amenazas, tanto antes de que ocurran como en respuesta a los eventos,
+               permite una planificación e implementación más efectivas de los esfuerzos de respuesta a desastres. 
+               Los datos de EMIT podrían permitir la detección de una variedad de peligros naturales y podrían 
+               usarse para guiar las estrategias de gestión de desastres. Por ejemplo, es posible utilizar datos 
+               de reflectancia como los de EMIT para localizar la distribución de minerales particulares en las 
+               laderas de los volcanes, lo que puede indicar una mayor probabilidad de flujos de escombros, lo que 
+               permite a las comunidades planificar alrededor de estas áreas de alto riesgo. Otro ejemplo es la 
+               respuesta a las inundaciones, donde los datos EMIT podrían proporcionar información sobre la extensión 
+               de las inundaciones, los impactos en los ecosistemas y la carga de sedimentos en las aguas superficiales.
             </p>
           </div>
         </div>
-        
     </div>
-    
   </div>
 </section>
 
@@ -77,6 +76,7 @@
 <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script is:inline>
 new Swiper(".swiper", { 
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
