@@ -1,10 +1,11 @@
 import { defineConfig } from "astro/config"
-
+L
 import react from "@astrojs/react"
 import tailwind from "@astrojs/tailwind"
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: "https://oscardelgadillo2501.github.io"
+  site: "https://oscardelgadillo2501.github.io",
+  base: '/Emit'
 });
