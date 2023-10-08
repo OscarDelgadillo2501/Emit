@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config"
-L
 import react from "@astrojs/react"
 import tailwind from "@astrojs/tailwind"
 
